@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+    <integer name="mr_rainbow_ring_offset_angle">-90</integer>
+    <integer name="mr_slide_panel_anchor_point_enabled_percent">60</integer>
+    <integer name="mr_slide_panel_anchor_point_disabled_percent">88</integer>
+    <integer name="mr_dial_turn_tip_text_size">18</integer>
+</resources>

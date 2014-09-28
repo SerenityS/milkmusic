@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:scrollbarStyle="outsideInset" android:id="@id/mr_search_suggestions_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/mr_background_list_selector" android:divider="#33ffffff" android:dividerHeight="1.0dip" />
+    <TextView android:textSize="17.0sp" android:textColor="@*android:color/white" android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/mr_empty_view" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</FrameLayout>

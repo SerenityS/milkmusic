@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/mr_radio_spinner_layout" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="112.0dip" android:layout_marginTop="57.0dip" android:src="@drawable/mr_tips_tutorial_arrow_down" android:scaleType="fitXY" />
+        <TextView android:textSize="20.0dip" android:textColor="@*android:color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:text="@string/mr_tutorial_station_info_guide" />
+    </LinearLayout>
+    <com.samsung.radio.view.widget.DefaultRadioPlayerView android:id="@id/mr_radio_player_view" android:paddingBottom="@dimen/mr_activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <include android:id="@id/mr_tutorial_back_skip_able_guide_layout" android:visibility="gone" layout="@layout/mr_tutorial_back_skip_able_guide" />
+    <include android:id="@id/mr_tutorial_back_skip_disable_guide_layout" android:visibility="gone" layout="@layout/mr_tutorial_back_skip_disable_guide" />
+</RelativeLayout>

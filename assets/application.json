@@ -1,0 +1,44 @@
+{
+	#prod server
+	#"urlWebSocket":"ws://radio-p-tk-elb-store-ws-361813253.ap-northeast-1.elb.amazonaws.com",
+    #"urlHttp":"http://radio-p-tk-elb-store-402023255.ap-northeast-1.elb.amazonaws.com/",
+    #"urlHttpSecure":"http://radio-p-tk-elb-store-402023255.ap-northeast-1.elb.amazonaws.com/",
+    #"networkTransportStartclient":"http://radio-p-tk-elb-store-402023255.ap-northeast-1.elb.amazonaws.com/",
+    "networkTransportStartclient":"http://hub.samsungmilkradio.com/",
+    
+	#stg server
+    #"urlWebSocket":"ws://radio-s-tk-elb-store-ws-1282901130.ap-northeast-1.elb.amazonaws.com:80/websocket",
+    #"urlHttp":"http://radio-s-tk-elb-store-1918282836.ap-northeast-1.elb.amazonaws.com/",
+    #"urlHttpSecure":"http://radio-s-tk-elb-store-1918282836.ap-northeast-1.elb.amazonaws.com/",
+    #"networkTransportStartclient":"http://radio-s-tk-elb-store-1918282836.ap-northeast-1.elb.amazonaws.com/",
+    
+    #dev server
+    #"urlWebSocket":"ws://radio-d-tk-elb-store-ws-97534953.ap-northeast-1.elb.amazonaws.com/websocket",
+    #"urlHttp":"http://radio-d-tk-elb-store-2066439141.ap-northeast-1.elb.amazonaws.com/",
+    #"urlHttpSecure":"http://radio-d-tk-elb-store-2066439141.ap-northeast-1.elb.amazonaws.com/",
+    #"networkTransportStartclient":"http://radio-d-tk-elb-store-2066439141.ap-northeast-1.elb.amazonaws.com/",
+    
+    #stg AU
+    #"urlHttp":"http://radio-s-sg-elb-store-73029754.ap-southeast-1.elb.amazonaws.com/",
+    #"urlHttpSecure":"http://radio-s-sg-elb-store-73029754.ap-southeast-1.elb.amazonaws.com/",
+    #"networkTransportStartclient":"http://radio-s-sg-elb-store-73029754.ap-southeast-1.elb.amazonaws.com/",
+    #"urlWebSocket":"ws://radio-s-sg-elb-store-ws-892922716.ap-southeast-1.elb.amazonaws.com/",
+        
+    "networkTranportWebSocketEnabled":false,
+	"networkTransportPingTimeoutMs":10000,
+	"networkTransportHeartbeatIntervalMs":6000,
+	"networkTransportHeartbeatTimeoutMs":5000,
+	"networkTransportHeartbeatBytes":130,
+	"networkTransportHeartbeatIsAlwaysSent":true,
+	"networkTransportHeartbeatMode":false;
+	"networkTransportResponseTimeoutMs":20000,
+	"networkTransportSSOResponseTimeoutMs":30000,
+	"networkTransportIdleTimeoutMs":600000,
+	"networkTransportWebSocketInitCutoffTimeoutMs":10000,
+	"samsungAccountTimeoutMs":15000,
+	"httpManagerThreadMax":8,
+	"serverApiRequestwriteModeEnabled":false,
+	"customLockScreenWidgetEnabled":true,
+	"serverAPIErrorCodeVisibility":false
+}
+

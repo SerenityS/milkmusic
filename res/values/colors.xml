@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mr_button_text">#ffffffff</color>
+    <color name="mr_button_text_shadow">#c0000000</color>
+    <color name="mr_player_cover_art_tint">#90000000</color>
+    <color name="mr_player_lyrics_bkgd_tint">#c0000000</color>
+    <color name="mr_list_background_image_color">#d8000000</color>
+    <color name="mr_widget_song_title">#ffe0e0e0</color>
+    <color name="mr_lockscreen_widget_song_title">#ffe0e0e0</color>
+    <color name="mr_ad_background">#40000000</color>
+    <item type="color" name="mr_setting_enabled_item">@*android:color/white</item>
+    <color name="mr_setting_disabled_item">#33ffffff</color>
+    <color name="mr_translucent_80_opercity">#cc000000</color>
+    <color name="mr_translucent_40_opercity">#66000000</color>
+</resources>

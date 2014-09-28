@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu android:id="@id/mr_song_station_options"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/mr_favorite_unfavorite_song_menu_item" android:title="@string/mr_favorite_song_menu_item" />
+    <item android:id="@id/mr_ban_song_menu_item" android:title="@string/mr_ban_song_menu_item" />
+    <item android:id="@id/mr_create_song_station_menu_item" android:title="@string/mr_create_song_station_menu_item" />
+    <item android:id="@id/mr_add_remove_from_my_stations_menu_item" android:title="@string/mr_add_to_my_stations_menu_item" />
+    <item android:id="@id/mr_view_station_details_menu_item" android:title="@string/mr_view_station_details_menu_item" />
+    <item android:id="@id/mr_buy_song_menu_item" android:title="@string/mr_buy_song_menu_item" />
+    <item android:id="@id/mr_share_menu_item" android:title="@string/mr_share_menu_item" />
+</menu>

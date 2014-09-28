@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mr_create_station_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@*android:color/white" android:gravity="center_vertical" android:id="@id/mr_drawer_title" android:paddingLeft="9.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/mr_drawer_menu_title_height" android:text="@string/mr_create_station_menu_item" android:drawablePadding="7.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:drawableStart="@drawable/mr_icn_global_create" />
+    <include android:id="@id/mr_search_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mr_drawer_title" android:layout_alignParentLeft="true" layout="@layout/mr_drawer_search_container" />
+</RelativeLayout>

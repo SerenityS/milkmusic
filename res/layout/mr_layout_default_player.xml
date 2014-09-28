@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mr_option_button_container" android:layout_width="@dimen/mr_player_button_size_3_button" android:layout_height="@dimen/mr_player_button_size_3_button">
+        <ImageView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mr_btn_background" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/mr_btn_option_menu" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mr_btn_options" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mr_prev_button_container" android:visibility="gone" android:layout_width="@dimen/mr_player_button_size_3_button" android:layout_height="@dimen/mr_player_button_size_3_button" android:layout_marginLeft="@dimen/mr_player_margin_button">
+        <ImageView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mr_btn_background" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/mr_btn_prev_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mr_prev_icon" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mr_play_pause_button_container" android:layout_width="@dimen/mr_player_button_size_3_button" android:layout_height="@dimen/mr_player_button_size_3_button" android:layout_marginLeft="@dimen/mr_player_margin_button">
+        <ImageView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mr_btn_background" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/mr_btn_play_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mr_ic_controls_play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mr_skip_button_container" android:layout_width="@dimen/mr_player_button_size_3_button" android:layout_height="@dimen/mr_player_button_size_3_button" android:layout_marginLeft="@dimen/mr_player_margin_button">
+        <ImageView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mr_btn_background" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/mr_btn_skip_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mr_skip_icon" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

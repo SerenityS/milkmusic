@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mr_popup_window" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.radio.view.widget.StaticListView android:layout_gravity="center" android:id="@id/mr_popup_window_listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/mr_background_list_selector" android:divider="#ff484848" android:dividerHeight="1.0dip" />
+</LinearLayout>

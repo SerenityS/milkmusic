@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mr_play_history_list_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/mr_loading_progress" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@android:style/Widget.Holo.Light.ProgressBar.Large" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/mr_fontsize_20" android:textColor="@*android:color/white" android:gravity="center_vertical" android:id="@id/mr_play_history_list_header" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/mr_drawer_menu_title_height" android:text="@string/mr_play_history_menu_item" android:drawablePadding="7.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:drawableStart="@drawable/mr_icn_global_history" />
+    <View android:id="@id/mr_header_divider_line" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:layout_below="@id/mr_play_history_list_header" android:alpha="0.33" />
+    <ListView android:id="@id/mr_play_history_list" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@*android:color/transparent" android:layout_below="@id/mr_header_divider_line" />
+    <TextView android:textSize="@dimen/mr_fontsize_17" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/mr_empty_view" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mr_history_empty_message" android:layout_below="@id/mr_header_divider_line" android:layout_alignParentBottom="true" />
+</RelativeLayout>

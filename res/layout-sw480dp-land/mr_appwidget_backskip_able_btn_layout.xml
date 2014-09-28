@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mr_prev_appwidget_skip_btn_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/mr_prev_appwidget_bg_skip" android:layout_width="@dimen/mr_widget_button_width_normal" android:layout_height="@dimen/mr_widget_button_width_normal" android:src="@drawable/mr_background_widget_btn_normal" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/mr_prev_appwidget_btn_skip" android:layout_width="@dimen/mr_widget_button_width_normal" android:layout_height="@dimen/mr_widget_button_width_normal" android:src="@drawable/mr_appwidget_skip_icon" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mr_prev_appwidget_toggle_btn_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mr_prev_widget_player_button_margin" android:layout_toLeftOf="@id/mr_prev_appwidget_skip_btn_container" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="@dimen/mr_widget_button_width_normal" android:layout_height="@dimen/mr_widget_button_width_normal" android:src="@drawable/mr_background_widget_btn_normal" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/mr_appwidget_btn_play_pause" android:layout_width="@dimen/mr_widget_button_width_normal" android:layout_height="@dimen/mr_widget_button_width_normal" android:src="@drawable/mr_btn_play_widget" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mr_prev_appwidget_prev_btn_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mr_prev_widget_player_button_margin" android:layout_toLeftOf="@id/mr_prev_appwidget_toggle_btn_container" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/mr_prev_appwidget_bg_prev" android:layout_width="@dimen/mr_widget_button_width_normal" android:layout_height="@dimen/mr_widget_button_width_normal" android:src="@drawable/mr_background_widget_btn_normal" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/mr_prev_appwidget_btn_prev" android:layout_width="@dimen/mr_widget_button_width_normal" android:layout_height="@dimen/mr_widget_button_width_normal" android:src="@drawable/mr_appwidget_prev_icon" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

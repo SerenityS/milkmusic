@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mr_global_menu_item_array">
+        <item>@string/mr_create_station_menu_item</item>
+        <item>@string/mr_manage_stations_menu_item</item>
+        <item>@string/mr_customize_dial_menu_item</item>
+        <item>@string/mr_favorite_songs_title</item>
+        <item>@string/mr_play_history_menu_item</item>
+        <item>@string/mr_settings_menu_item</item>
+        <item>@string/mr_help_menu_item</item>
+    </string-array>
+    <string-array name="mr_favorite_songs_list_sortby_array">
+        <item>@string/mr_favorite_songs_list_header_menu_option_sortby_date</item>
+        <item>@string/mr_favorite_songs_list_header_menu_option_sortby_name</item>
+    </string-array>
+    <string-array name="mr_history_station_menu">
+        <item>@string/mr_play_station_menu_item</item>
+        <item>@string/mr_add_to_my_stations_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_station_menu_remove">
+        <item>@string/mr_play_station_menu_item</item>
+        <item>@string/mr_remove_from_my_stations_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_track_menu">
+        <item>@string/mr_favorite_song_menu_item</item>
+        <item>@string/mr_create_song_station_menu_item</item>
+        <item>@string/mr_buy_song_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_track_menu_remove">
+        <item>@string/mr_unfavorite_song_menu_item</item>
+        <item>@string/mr_create_song_station_menu_item</item>
+        <item>@string/mr_buy_song_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_track_menu_no_buysong">
+        <item>@string/mr_favorite_song_menu_item</item>
+        <item>@string/mr_create_song_station_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_track_menu_remove_no_buysong">
+        <item>@string/mr_unfavorite_song_menu_item</item>
+        <item>@string/mr_create_song_station_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_track_menu_no_create">
+        <item>@string/mr_favorite_song_menu_item</item>
+        <item>@string/mr_buy_song_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_track_menu_remove_no_create">
+        <item>@string/mr_unfavorite_song_menu_item</item>
+        <item>@string/mr_buy_song_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_track_menu_no_buysong_no_create">
+        <item>@string/mr_favorite_song_menu_item</item>
+    </string-array>
+    <string-array name="mr_history_track_menu_remove_no_buysong_no_create">
+        <item>@string/mr_unfavorite_song_menu_item</item>
+    </string-array>
+    <string-array name="mr_manage_genre_station_menu_item_array">
+        <item>@string/mr_remove_from_my_stations_menu_item</item>
+        <item>@string/mr_view_station_details_menu_item</item>
+    </string-array>
+    <string-array name="mr_manage_personal_station_menu_item_array">
+        <item>@string/mr_remove_from_my_stations_menu_item</item>
+        <item>@string/mr_edit_station_menu_item</item>
+    </string-array>
+    <string-array name="mr_manage_my_stations_overflow_menu_item_array">
+        <item>@string/mr_favorite_songs_list_header_menu_option_sortby_date</item>
+        <item>@string/mr_favorite_songs_list_header_menu_option_sortby_name</item>
+        <item>@string/mr_reorder_stations_menu_item</item>
+    </string-array>
+</resources>

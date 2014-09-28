@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mr_rainbow_ring_width">255.0dip</dimen>
+    <dimen name="mr_rainbow_ring_height">255.0dip</dimen>
+    <dimen name="mr_rainbow_ring_thickness">3.5dip</dimen>
+    <dimen name="mr_rainbow_ring_thickness_lockscreen">1.0dip</dimen>
+    <dimen name="mr_cover_art_width">247.5dip</dimen>
+    <dimen name="mr_cover_art_height">247.5dip</dimen>
+    <dimen name="mr_notification_cover_art_dimen">60.0dip</dimen>
+    <dimen name="mr_notification_widget_height">64.0dip</dimen>
+    <dimen name="mr_history_station_row_height">40.0dip</dimen>
+    <dimen name="mr_history_date_col_width">69.0dip</dimen>
+    <dimen name="mr_manage_my_stations_menu_list_item_height">50.0dip</dimen>
+    <dimen name="mr_station_number_circle_background_diameter">25.0dip</dimen>
+</resources>

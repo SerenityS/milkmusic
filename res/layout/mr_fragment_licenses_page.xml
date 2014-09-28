@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@*android:color/white" android:gravity="center_vertical" android:id="@id/mr_licenses_header" android:paddingLeft="@dimen/mr_help_page_horizontal_padding" android:layout_width="fill_parent" android:layout_height="@dimen/mr_drawer_menu_title_height" android:text="@string/mr_help_license" />
+    <View android:id="@id/header_divider_line" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:layout_below="@id/mr_licenses_header" android:alpha="0.4" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mr_licenses_header">
+        <TextView android:textSize="12.0sp" android:textColor="@*android:color/white" android:id="@id/mr_licenses_content" android:paddingTop="21.0dip" android:paddingBottom="21.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mr_help_page_horizontal_padding" android:layout_marginRight="7.0dip" />
+    </ScrollView>
+</RelativeLayout>

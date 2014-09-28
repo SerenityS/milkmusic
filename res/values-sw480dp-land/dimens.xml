@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mr_notification_player_btn_width">47.0dip</dimen>
+    <dimen name="mr_notification_player_backskip_btn_width">40.0dip</dimen>
+    <dimen name="mr_widget_left_margin_background">37.0dip</dimen>
+    <dimen name="mr_lock_screen_widget_dial_size">432.0dip</dimen>
+    <dimen name="mr_lock_screen_widget_dial_top_margin">178.0dip</dimen>
+    <dimen name="mr_lock_screen_widget_title_top_margin">55.0dip</dimen>
+    <dimen name="mr_lock_screen_widget_unlock_text_bottom_margin">155.0dip</dimen>
+    <dimen name="mr_widget_left_margin_background_gradient">37.0dip</dimen>
+    <dimen name="mr_widget_width">697.0dip</dimen>
+    <dimen name="mr_widget_station_info_width">663.0dip</dimen>
+    <dimen name="mr_widget_height">80.0dip</dimen>
+</resources>

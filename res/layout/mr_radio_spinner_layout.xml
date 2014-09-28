@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mr_fake_spinner" android:paddingLeft="17.0dip" android:paddingRight="@dimen/mr_spinner_left_padding" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mr_station_spinner_top_margin" android:layout_alignParentLeft="true">" <LinearLayout android:id="@id/mr_fake_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/mr_spinner_all_stations_anchor_view" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.samsung.radio.view.widget.ScrollTextView android:textSize="@dimen/mr_spinner_title_text_size" android:textColor="@*android:color/white" android:id="@id/mr_song_label" android:paddingLeft="@dimen/mr_spinner_left_padding" android:paddingRight="@dimen/mr_spinner_left_padding" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/mr_fake_spinner" android:layout_alignParentLeft="true" android:contentDescription="@string/mr_song_label" />
+    <com.samsung.radio.view.widget.ScrollTextView android:textSize="@dimen/mr_spinner_artist_text_size" android:textColor="@*android:color/white" android:id="@id/mr_artist_label" android:paddingLeft="@dimen/mr_spinner_left_padding" android:paddingTop="1.0dip" android:paddingRight="@dimen/mr_spinner_left_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/mr_song_label" android:layout_alignParentLeft="true" android:contentDescription="@string/mr_artist_label" />
+</RelativeLayout>

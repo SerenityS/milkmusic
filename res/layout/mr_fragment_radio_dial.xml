@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mr_radio_top_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mr_wallpaper_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+    <com.samsung.radio.view.widget.RadioImageView android:id="@id/mr_wallpaper_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+    <com.samsung.radio.view.widget.RadioImageView android:id="@id/mr_player_dial_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/mr_controls_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/mr_actionbar_height" android:layout_marginTop="@dimen/mr_actionbar_margin_top">
+            <ImageView android:id="@id/mr_store" android:visibility="gone" android:layout_width="@dimen/mr_actionbar_width" android:layout_height="wrap_content" android:src="@drawable/mr_actionbar_btn_store_home_txt_kr_normal" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/mr_btn_menu_indicator" />
+            <View android:id="@id/mr_divider" android:background="#4cb5b5b5" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/mr_store" />
+            <ImageView android:id="@id/mr_subscription" android:visibility="gone" android:layout_width="@dimen/mr_actionbar_width" android:layout_height="wrap_content" android:src="@drawable/mr_actionbar_btn_payment_normal" android:layout_toLeftOf="@id/mr_divider" android:layout_alignParentTop="true" android:contentDescription="@string/mr_btn_menu_indicator" />
+        </RelativeLayout>
+        <com.samsung.radio.view.widget.DefaultRadioPlayerView android:id="@id/mr_radio_player_view" android:paddingBottom="@dimen/mr_player_margin_bottom_3_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <ProgressBar android:id="@id/mr_rainbow_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" style="@android:style/Widget.Holo.Light.ProgressBar.Large" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/mr_nav_drawer_icon" android:layout_width="@dimen/mr_drawer_icon_width" android:layout_height="@dimen/mr_actionbar_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mr_actionbar_margin_top" android:src="@drawable/mr_btn_menu_indicator" android:contentDescription="@string/mr_btn_menu_indicator" />
+    </LinearLayout>
+    <View android:id="@id/mr_transparent_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/mr_hover_panel" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAlignBottom="true" />
+    <include layout="@layout/mr_toast_undo" />
+</RelativeLayout>

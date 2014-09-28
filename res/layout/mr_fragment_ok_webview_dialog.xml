@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mr_ok_webview_dialog_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/mr_dialog_title_webview" />
+    <Button android:textSize="17.0dip" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/mr_dialog_positive_button" android:background="@drawable/mr_background_dialog_button" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/mr_message_divider_line" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mr_AppBaseTheme" parent="@*android:style/Theme.Light.NoTitleBar" />
+    <style name="mr_AppTheme" parent="@style/AppBaseTheme" />
+    <style name="AppTheme.Transparent" parent="@style/mr_AppTheme">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="mr_NotificationSongTextStyle" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="mr_NotificationArtistTextStyle" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff919191</item>
+    </style>
+    <style name="mr_NotificationSongTitle" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="mr_NotificationAlbumTitle" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">#ff919191</item>
+    </style>
+    <style name="mr_WidgetStationNumberTextStyle" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">9.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="mr_WidgetStationNameTextStyle" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="mr_WidgetSongTextStyle" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">@dimen/mr_widget_song_text_size</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="mr_WidgetArtistTextStyle" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffacabab</item>
+    </style>
+    <style name="mr_CustomRadioButton" parent="@*android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:button">@drawable/mr_btn_radio</item>
+    </style>
+    <style name="mr_CustomCheckBox" parent="@*android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/mr_btn_checkbox</item>
+        <item name="android:drawablePadding">11.0dip</item>
+    </style>
+</resources>

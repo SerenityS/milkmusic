@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/mr_play_id" android:title="Play" />
+    <item android:id="@id/mr_add_my_station_id" android:title="Add to My Station" />
+    <item android:id="@id/mr_remove_my_station_id" android:title="Remove from My Station" />
+    <item android:id="@id/mr_edit_station_name_id" android:title="Edit Personal Station name" />
+</menu>

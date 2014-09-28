@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mr_search_container" android:background="@drawable/mr_text_input_box" android:layout_width="fill_parent" android:layout_height="@dimen/mr_artist_search_container_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <ImageView android:id="@id/mr_cancel_button" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mr_btn_cancel" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/mr_searchTextAlignmentHelper" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/mr_cancel_button" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffb6b6b6" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/mr_fake_search_hint" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mr_search_text_hint" android:singleLine="true" android:layout_alignRight="@id/mr_searchTextAlignmentHelper" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.samsung.radio.view.widget.SoftKeyboardAwareEditText android:textSize="17.0sp" android:textColor="@*android:color/white" android:gravity="center_vertical" android:id="@id/mr_search_text" android:background="@*android:color/transparent" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="100" android:layout_alignRight="@id/mr_searchTextAlignmentHelper" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="textAutoComplete" android:imeOptions="actionSearch" />
+    </RelativeLayout>
+    <TabHost android:id="@*android:id/tabhost" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mr_search_container">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TabWidget android:orientation="horizontal" android:id="@*android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" />
+            <FrameLayout android:id="@*android:id/tabcontent" android:paddingTop="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@*android:id/tabs" />
+        </RelativeLayout>
+    </TabHost>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mr_drawer_width">266.0dip</dimen>
+    <dimen name="mr_drawer_menu_width">327.0dip</dimen>
+    <dimen name="mr_style_popup_menu_horizontal_offset">44.0dip</dimen>
+    <dimen name="mr_style_popup_menu_vertical_offset">-4.0dip</dimen>
+    <dimen name="mr_widget_song_text_size">17.0dip</dimen>
+    <dimen name="mr_options_vertical_margin">20.0dip</dimen>
+    <dimen name="mr_options_horizontal_margin_3_button">-26.0dip</dimen>
+    <dimen name="mr_options_horizontal_margin_4_button">-19.0dip</dimen>
+    <dimen name="mr_widget_height">95.0dip</dimen>
+    <dimen name="mr_splash_samsung_logo_bottom_padding">89.0dip</dimen>
+    <dimen name="mr_splash_milk_logo_top_padding">118.0dip</dimen>
+</resources>

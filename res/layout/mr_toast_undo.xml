@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mr_undo_toast_panel" android:background="#cc000000" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="73.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/mr_ban_song_toast_font_size" android:textColor="@*android:color/white" android:gravity="center_vertical" android:id="@id/mr_undo_button" android:background="@drawable/mr_background_dialog_button" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="@string/mr_undo" android:singleLine="true" android:drawableLeft="@drawable/mr_btn_line_undo_ban_toast" android:drawablePadding="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/mr_ban_song_toast_font_size" android:textColor="@*android:color/white" android:id="@id/mr_undo_toast_txt" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mr_banned_song_from_station" android:layout_toLeftOf="@id/mr_undo_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</merge>

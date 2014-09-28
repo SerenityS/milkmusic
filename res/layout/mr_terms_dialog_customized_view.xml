@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mr_terms_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mr_checkbox_terms_container" android:paddingLeft="18.0dip" android:paddingTop="3.0dip" android:paddingRight="11.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:soundEffectsEnabled="false">
+            <CheckBox android:id="@id/mr_checkbox_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/mr_btn_checkbox" />
+        </LinearLayout>
+        <TextView android:textSize="19.0dip" android:textColor="@*android:color/white" android:linksClickable="true" android:id="@id/mr_tv_agree_terms" android:background="@drawable/mr_background_dialog_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mr_agreement_terms_conditions" android:layout_toRightOf="@id/mr_checkbox_terms_container" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mr_policy_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/mr_terms_layout">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mr_checkbox_policy_container" android:paddingLeft="18.0dip" android:paddingTop="3.0dip" android:paddingRight="11.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:soundEffectsEnabled="false">
+            <CheckBox android:id="@id/mr_checkbox_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/mr_btn_checkbox" />
+        </LinearLayout>
+        <TextView android:textSize="19.0dip" android:textColor="@*android:color/white" android:linksClickable="true" android:id="@id/mr_tv_agree_policy" android:background="@drawable/mr_background_dialog_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mr_agreement_privacy_policy" android:layout_toRightOf="@id/mr_checkbox_policy_container" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

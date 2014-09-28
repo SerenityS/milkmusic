@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mr_CustomRadioButton" parent="@*android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:paddingLeft">33.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:button">@drawable/mr_btn_radio</item>
+    </style>
+    <style name="AppBaseTheme" parent="@*android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:dropDownListViewStyle">@style/SamsungRadio.Spinner.DropDownListView</item>
+        <item name="android:listPopupWindowStyle">@style/SamsungRadio.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/SamsungRadio.PopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/SamsungRadio.TextAppearance.PopupMenuItem</item>
+        <item name="android:listPreferredItemHeightSmall">42.0dip</item>
+    </style>
+    <style name="SamsungRadio.Dialog" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@drawable/mr_dialog_bg</item>
+        <item name="android:textColorLink">@color/mr_link_text</item>
+    </style>
+    <style name="SamsungRadio.Spinner.DropDownListView" parent="@*android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/mr_background_list_selector</item>
+        <item name="android:divider">#ff484848</item>
+        <item name="android:dividerHeight">1.0dip</item>
+    </style>
+    <style name="SamsungRadio.PopupMenu" parent="@*android:style/Widget.Holo.Light.PopupMenu">
+        <item name="android:dropDownSelector">@drawable/mr_background_list_selector</item>
+        <item name="android:popupBackground">@drawable/mr_dropdown2</item>
+    </style>
+    <style name="SamsungRadio.TextAppearance.PopupMenuItem" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffd6d6d6</item>
+    </style>
+    <style name="SamsungRadio.ListPopupWindow" parent="@*android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:dropDownSelector">@drawable/mr_background_list_selector</item>
+        <item name="android:popupBackground">@drawable/mr_dropdown2</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+</resources>

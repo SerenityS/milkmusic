@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1014091910" android:versionName="1.00.140919.10" package="com.samsung.radio"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.samsung.radio.provider.permission.READ_RADIOPROVIDER" />
+    <uses-permission android:name="com.samsung.radio.provider.permission.WRITE_RADIOPROVIDER" />
+    <uses-permission android:name="com.samsung.radio.service.permission.BIND_RADIOSERVICE" />
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_b0bc10f43cedffe6ae48c2d4219a1a4903692d80a71c9e34a887fc6e3b4e79515225ba225caa3f1b78c267c835cdf9c611a1e02c1719db39b099bc27ea8df894e961f5f3a2d1ca6d6a890842b65ebf4dd5460225d130a15bd8b38f70754d316a9a7c484ce577aed2bcd331d6196dd2942bd325243cc85b65560aaa99e06bcb3d" />
+    <meta-data android:name="tnkad_app_id" android:value="20c0f040-e0f1-5418-8145-1f0e03060d08" />
+    <permission android:name="com.samsung.radio.provider.permission.READ_RADIOPROVIDER" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.samsung.radio.provider.permission.WRITE_RADIOPROVIDER" android:protectionLevel="signature" />
+    <permission android:name="com.samsung.radio.service.permission.BIND_RADIOSERVICE" android:protectionLevel="signature" />
+    <application android:theme="@style/mr_AppTheme" android:label="@string/mr_app_name" android:icon="@drawable/ic_launcher" android:name="com.samsung.radio.MusicRadioApp" android:screenOrientation="portrait" android:allowBackup="true" android:largeHeap="true">
+        <activity android:label="@string/mr_app_name" android:name="com.samsung.radio.MusicRadioSplash" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.DeviceDefault.Light.NoActionBar" android:name="com.samsung.radio.MusicRadioLockScreenActivity" android:excludeFromRecents="true" android:screenOrientation="portrait" />
+        <activity android:label="@string/mr_app_name" android:name="com.samsung.radio.MusicRadioMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|uiMode">
+            <intent-filter>
+                <action android:name="com.sec.android.airview.HOVER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="radio" android:host="main" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Transparent" android:name="com.samsung.radio.fragment.TermsAndTutorialActivity" android:launchMode="singleTop" android:configChanges="keyboard|keyboardHidden|uiMode">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.samsung.radio.MusicRadioMainActivity" />
+        </activity>
+        <activity android:theme="@style/AppTheme.Transparent" android:name="com.samsung.radio.MusicRadioNoticeActivity" android:launchMode="singleTop" android:configChanges="keyboard|keyboardHidden|uiMode" />
+        <service android:name="com.samsung.radio.service.MusicRadioService" android:permission="com.samsung.radio.service.permission.BIND_RADIOSERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.samsung.music.radio.service.BIND_SERVICE" />
+                <action android:name="com.samsung.music.radio.service.aidl.IMusicRadioRemoteService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.samsung.radio.service.playback.PlaybackService" android:permission="com.samsung.radio.service.permission.BIND_RADIOSERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.samsung.radio.service.player.BIND_SERVICE" />
+                <action android:name="com.samsung.music.radio.service.playback.IPlaybackService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_PLAYSTATION" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_PLAY" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_PAUSE" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_PREV" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_NEXT" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_EXIT" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_STOP" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_TOGGLE_PLAY" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_NEXT_STATION" />
+                <action android:name="com.samsung.radio.service.playback.ACTION_PLAYER_COMMAND_PREV_STATION" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.samsung.radio.service.playback.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.samsung.radio.service.playback.remote.control.HomeScreenWidgetObserver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@layout/mr_appwidget_provider" />
+        </receiver>
+        <provider android:label="@string/mr_raio_content_provider_label" android:name="com.samsung.radio.provider.MusicRadioProvider" android:readPermission="com.samsung.radio.provider.permission.READ_RADIOPROVIDER" android:writePermission="com.samsung.radio.provider.permission.WRITE_RADIOPROVIDER" android:exported="true" android:authorities="com.samsung.radio.provider" android:syncable="false" />
+        <provider android:name="com.samsung.radio.provider.MusicRadioFileProvider" android:exported="true" android:authorities="com.samsung.radio.files.images" />
+        <provider android:name="com.samsung.radio.provider.CoverArtProvider" android:readPermission="com.samsung.radio.provider.permission.READ_RADIOPROVIDER" android:exported="true" android:authorities="com.samsung.radio.providers.coverart" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="sec.android.slogger.lib.SLoggerDialog" android:finishOnTaskLaunch="true" android:excludeFromRecents="true" android:launchMode="singleInstance" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="sec.android.slogger.lib.CrashAgreeDialog" android:finishOnTaskLaunch="true" android:excludeFromRecents="true" android:launchMode="singleInstance" />
+    </application>
+</manifest>
